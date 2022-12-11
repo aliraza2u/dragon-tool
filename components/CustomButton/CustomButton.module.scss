@@ -1,5 +1,7 @@
-@import '../../styles/_variables';
+@import "../../styles/_variables";
 
 .customButton {
-    background-color: red;
+  color: $white;
+  font-size: 20px;
+  font-weight: 600;
 }
