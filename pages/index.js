@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
+import Head from "next/head";
+import styles from "../styles/Home.module.scss";
 
 export default function Home() {
   return (
@@ -11,8 +11,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Dragon Client</h1>
+        <h1>Dragon Client setup</h1>
       </main>
     </div>
-  )
+  );
 }
