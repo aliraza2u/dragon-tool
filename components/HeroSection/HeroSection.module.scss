@@ -1,0 +1,33 @@
+@import "../../styles/_variables";
+
+.herosection {
+  background-color: $filterBlurl;
+  //   filter: blur(250px);
+  .container {
+    margin-left: 15rem;
+    margin-right: 15rem;
+    .row {
+      .heading {
+        width: 798px;
+        height: 376px;
+        left: 130px;
+        top: 359px;
+        .dragon {
+          width: 798px;
+          height: 216px;
+          left: 130px;
+          top: 359px;
+
+          font-family: "Gotham";
+          font-style: normal;
+          font-weight: 700;
+          font-size: $headingSize;
+          line-height: 102%;
+          .best {
+            color: $secondaryColor;
+          }
+        }
+      }
+    }
+  }
+}
