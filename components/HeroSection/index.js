@@ -27,17 +27,19 @@ const index = () => {
                   Affordable to Them.
                 </p>
               </div>
-              <div className={styles.buttonWrap}>
-                <CustomButton
-                  children={"Signup Today"}
-                  className={styles.signup}
-                />
-              </div>
+              {/* <div className={styles.buttonWrap}> */}
+              <CustomButton
+                children={"Signup Today"}
+                className={styles.signupDragon}
+              />
+              {/* </div> */}
             </div>
           </Col>
           <Col xs={12} md={6}>
-            <div className={styles.imageWrap}>
-              <Image src={logo} className={styles.wrap} />
+            <div className={styles.imageBackground}>
+              <div className={styles.imageWrapper}>
+                <Image src={logo} className={styles.img} />
+              </div>
             </div>
           </Col>
         </Row>

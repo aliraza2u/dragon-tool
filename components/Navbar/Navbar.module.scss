@@ -39,8 +39,6 @@
         align-items: center;
         width: 233px;
         height: 58px;
-        left: 1422px;
-        top: 66px;
 
         background: $cgBlue;
         border-radius: 70px;
@@ -55,22 +53,22 @@
           font-style: normal;
           font-weight: 600;
           font-size: 20px;
-          line-height: 158%;
 
           text-align: center;
         }
         .login {
           width: 37px;
           height: 37px;
-          left: 1437px;
-          top: 77px;
-
+          display: flex;
+          justify-content: center;
+          align-items: center;
           background: $vectorbackground;
           border-radius: 40px;
           .vector {
             color: $vector;
-            margin-left: 9px;
-            margin-top: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
         }
       }
