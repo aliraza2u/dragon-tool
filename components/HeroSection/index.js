@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import CustomButton from "../CustomButton";
 import Image from "next/image";
 import logo from "../../public/logo.png";
-const index = () => {
+const HeroSection = () => {
   return (
     <div className={styles.herosection}>
       <Container>
@@ -48,4 +48,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default HeroSection;

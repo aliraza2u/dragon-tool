@@ -1,0 +1,68 @@
+@import "../../styles/_variables";
+
+.dragonWrap {
+  width: 100%;
+  background-color: $background;
+  .dragonAffordale {
+    gap: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: "Gotham";
+      font-style: normal;
+      font-weight: 700;
+      font-size: $headingSize;
+      color: $white;
+      .heading {
+        color: $secondaryColor;
+      }
+    }
+    .dollerWrapper {
+      width: 277px;
+      height: 275px;
+      .wrapper {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .dragonAffordaleDiscription {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      width: 80%;
+      color: $white;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: $textSize;
+    }
+  }
+  .drafonChoosing {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    h1 {
+      color: $white;
+      font-family: "Gotham";
+      font-style: normal;
+      font-weight: 700;
+      font-size: $headingSize;
+    }
+    .dragonBest {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      color: $best;
+    }
+  }
+}

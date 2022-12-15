@@ -3,6 +3,8 @@ import styles from "../styles/Home.module.scss";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
+import Divider from "../components/Divider";
+import DragonAffordable from "../components/DragonAffordable";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -15,6 +17,8 @@ export default function Home() {
       <main>
         <Navbar />
         <HeroSection />
+        <Divider />
+        <DragonAffordable />
         {/* <Footer /> */}
       </main>
     </div>
