@@ -1,0 +1,32 @@
+@import "../../styles/_variables";
+
+.faqDragonWrapper {
+  background-color: $background;
+  .FaqDragon {
+    text-align: center;
+    padding-bottom: 2rem;
+    h1 {
+      color: $white;
+      font-family: "Gotham";
+      font-style: normal;
+      font-weight: 700;
+      font-size: $headingSize;
+    }
+  }
+  .faqWrapper {
+    h3 {
+      font-family: "Gotham";
+      font-style: normal;
+      font-weight: 700;
+      font-size: $textFontSize;
+      color: $white;
+    }
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: $textSizeSm;
+      color: $white;
+    }
+  }
+}

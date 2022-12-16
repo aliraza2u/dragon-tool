@@ -1,0 +1,73 @@
+@import "../../styles/_variables";
+.clientWrapper {
+  width: 100%;
+  background-color: $background;
+  .client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 4rem;
+    .imageWrapper {
+      .wrapper {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    h1 {
+      color: $white;
+      font-family: "Gotham";
+      font-style: normal;
+      font-weight: 700;
+      font-size: $headingSize;
+    }
+  }
+  .cardWrap {
+    .card {
+      width: 100%;
+      height: 263px;
+
+      background-color: $white;
+      border-radius: 15px;
+      .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+        p {
+          width: 449px;
+          height: 81px;
+          text-align: center;
+          font-family: "Gotham";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+        }
+      }
+      .nameWrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.5rem;
+        padding-top: 3rem;
+        .designerWrapper {
+          h1 {
+            font-family: "Gotham";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 0px;
+          }
+          p {
+            font-family: "Gotham";
+            font-style: italic;
+            font-weight: 500;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
