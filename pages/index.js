@@ -7,6 +7,7 @@ import Divider from "../components/Divider";
 import DragonAffordable from "../components/DragonAffordable";
 import ClientDragon from "../components/ClientDragon";
 import FaqDragon from "../components/FaqDragon";
+import ImportantDragon from "../components/ImportantDragon";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -20,6 +21,7 @@ export default function Home() {
         <Navbar />
         {/* <ClientDragon /> */}
         {/* <FaqDragon /> */}
+        <ImportantDragon />
         {/* <HeroSection /> */}
         {/* <Divider /> */}
         {/* <DragonAffordable /> */}
