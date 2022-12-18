@@ -4,6 +4,7 @@ import Image from "next/image";
 import client from "../../public/client.png";
 import { Col, Container, Row } from "react-bootstrap";
 import { card } from "./CardApi";
+import user from "../../public/user.png";
 const index = () => {
   return (
     <div className={styles.clientWrapper}>
@@ -17,7 +18,7 @@ const index = () => {
         <Container>
           <Row>
             {card.map((x) => (
-              <Col xs={12} md={4}>
+              <Col xs={12} md={4} className={styles.cardCol}>
                 <div
                   className={styles.card}
                   style={{ backgroundImage: `url(${x.url})` }}
@@ -26,7 +27,9 @@ const index = () => {
                     <p>{x.detail}</p>
                   </div>
                   <div className={styles.nameWrapper}>
-                    <div className={styles.imageWrapper}>fghjk</div>
+                    <div className={styles.imageWrapper}>
+                      <Image src={user} className={styles.wrapper} />
+                    </div>
                     <div className={styles.designerWrapper}>
                       <h1>{x.name}</h1>
                       <p>{x.designer}</p>

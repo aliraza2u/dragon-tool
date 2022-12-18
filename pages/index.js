@@ -19,13 +19,13 @@ export default function Home() {
 
       <main>
         <Navbar />
-        {/* <ClientDragon /> */}
-        {/* <FaqDragon /> */}
+        {/* <ClientDragon />
+        <FaqDragon />
+        <HeroSection />
+        <Divider />
+        <DragonAffordable />
         <ImportantDragon />
-        {/* <HeroSection /> */}
-        {/* <Divider /> */}
-        {/* <DragonAffordable /> */}
-        {/* <Footer /> */}
+        <Footer /> */}
       </main>
     </div>
   );
