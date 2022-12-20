@@ -8,10 +8,6 @@ $footerColor: #5959598a;
 $white: #ffffff;
 $red: #ff0000;
 $background: #181818;
-$headingSize: 70px;
-$textSize: 28px;
-$textFontSize: 40px;
-$textSizeSm: 20px;
 $vector: #f5f5f5;
 $vectorbackground: #252525;
 $filterBlurl: rgba(255, 255, 255, 0.14);
@@ -28,3 +24,13 @@ $sm: "(max-width: 767px)";
 $lsm: "only screen and (min-width: 576px) and (max-width: 767px)";
 $xsm: "(max-width: 575px)";
 $tiny: "(max-width: 399px)";
+
+// Padding variables
+$horizontalPaddingLg: 0 10px;
+
+// Font sizes
+$headingSize: 70px;
+$textSize: 28px;
+$textSizeLg: 40px;
+$textSizeSm: 20px;
+$textNormal: 16px;

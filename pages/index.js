@@ -8,6 +8,7 @@ import DragonAffordable from "../components/DragonAffordable";
 import ClientDragon from "../components/ClientDragon";
 import FaqDragon from "../components/FaqDragon";
 import ImportantDragon from "../components/ImportantDragon";
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -19,13 +20,13 @@ export default function Home() {
 
       <main>
         <Navbar />
-        {/* <ClientDragon />
+        <ClientDragon />
         <FaqDragon />
         <HeroSection />
         <Divider />
         <DragonAffordable />
         <ImportantDragon />
-        <Footer /> */}
+        <Footer />
       </main>
     </div>
   );
