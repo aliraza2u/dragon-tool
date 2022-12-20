@@ -1,0 +1,80 @@
+@import "../../styles/_variables";
+
+.herosection {
+  background-color: $background;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
+  .heading {
+    width: 100%;
+    height: 376px;
+
+    .dragon {
+      h1 {
+        color: $white;
+        width: 798px;
+        height: 216px;
+
+        font-family: "Gotham";
+        font-style: normal;
+        font-weight: 700;
+        font-size: $headingSize;
+      }
+      .best {
+        color: $secondaryColor;
+      }
+    }
+    .dragonDetail {
+      margin-top: 0;
+      p {
+        width: 100%;
+        height: 137px;
+        color: $white;
+        font-family: "Gotham";
+        font-style: normal;
+        font-weight: 400;
+        font-size: $textSizeSm;
+      }
+    }
+
+    .signupDragon {
+      width: 284px;
+      height: 68px;
+      font-family: "Gotham";
+      font-style: normal;
+      font-weight: $headingSize;
+      font-size: $textSize;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $cgBlue;
+      color: $vector;
+    }
+  }
+  .imageBackground {
+    width: 552px;
+    height: 553px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondaryColor;
+    border-radius: 50%;
+    position: relative;
+    .imageWrapper {
+      width: 516px;
+      height: 607px;
+      position: absolute;
+      left: -20px;
+      bottom: 0px;
+      .img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        // width: 516px;
+        // height: 607px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+      }
+    }
+  }
+}
