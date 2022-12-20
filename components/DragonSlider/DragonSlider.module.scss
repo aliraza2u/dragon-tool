@@ -1,0 +1,70 @@
+@import "../../styles/_variables";
+
+.sliderWrapper {
+  background-color: $background;
+  .sliderHeading {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    h1 {
+      font-family: "Gotham";
+      font-style: normal;
+      font-weight: 700;
+      font-size: $headingSize;
+      text-align: center;
+      color: $secondaryColor;
+    }
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: $textSize;
+      text-align: center;
+      color: $white;
+    }
+  }
+  .sliderButton {
+    width: 267px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: $red;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sliderDragon {
+    width: 566px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    background-color: $secondaryColor;
+    h1 {
+      text-align: center;
+      color: #fff;
+      background-color: $cgBlue;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+    }
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 41px;
+      text-align: center;
+    }
+    .list {
+      ul {
+        list-style: none;
+        li {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          color: $white;
+        }
+      }
+    }
+  }
+}

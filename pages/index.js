@@ -8,6 +8,8 @@ import DragonAffordable from "../components/DragonAffordable";
 import ClientDragon from "../components/ClientDragon";
 import FaqDragon from "../components/FaqDragon";
 import ImportantDragon from "../components/ImportantDragon";
+import ChoosingDragon from "../components/ChoosingDragon";
+import DragonSlider from "../components/DragonSlider";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -19,13 +21,15 @@ export default function Home() {
 
       <main>
         <Navbar />
-        {/* <ClientDragon />
-        <FaqDragon />
         <HeroSection />
         <Divider />
         <DragonAffordable />
+        <ChoosingDragon />
+        <DragonSlider />
+        <ClientDragon />
+        <FaqDragon />
         <ImportantDragon />
-        <Footer /> */}
+        <Footer />
       </main>
     </div>
   );

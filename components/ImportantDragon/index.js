@@ -15,6 +15,7 @@ const ImportantDragon = () => {
       <div className={styles.important}>
         <CustomButton children={"CHAT NOW"} className={styles.wraper} />
         <CustomButton children={"SIGN UP"} className={styles.wrap} />
+        <span>No payment needed</span>
       </div>
     </div>
   );

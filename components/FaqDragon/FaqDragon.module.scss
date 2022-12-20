@@ -2,9 +2,11 @@
 
 .faqDragonWrapper {
   background-color: $background;
+  padding-top: 7rem;
+  padding-bottom: 6rem;
   .FaqDragon {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     h1 {
       color: $white;
       font-family: "Gotham";

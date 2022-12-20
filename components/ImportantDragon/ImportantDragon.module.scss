@@ -2,7 +2,7 @@
 
 .importantDragonWrapper {
   background-color: $background;
-  margin-bottom: 1rem;
+  padding-bottom: 1px;
   .importantDragon {
     text-align: center;
     h1 {
@@ -47,6 +47,8 @@
       font-size: 31px;
       background: $cgBlue;
       border-radius: 6px;
+    }
+    p {
     }
   }
 }
