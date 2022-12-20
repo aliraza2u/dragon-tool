@@ -14,8 +14,8 @@ const DragonSlider = () => {
       </div>
       <CustomButton children={"Most Popular"} className={styles.sliderButton} />
       <Slider {...settings}>
-        {slider.map((x) => (
-          <div className={styles.sliderDragon}>
+        {slider.map((x, i) => (
+          <div key={i} className={styles.sliderDragon}>
             <div className={styles.sliderHeading}>
               <h1>Pricing & Plan</h1>
               <p>What Makes us Best !</p>
