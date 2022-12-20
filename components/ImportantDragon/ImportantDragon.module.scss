@@ -2,53 +2,71 @@
 
 .importantDragonWrapper {
   background-color: $background;
-  padding-bottom: 1px;
-  .importantDragon {
-    text-align: center;
-    h1 {
-      color: $white;
-      font-family: "Gotham";
-      font-style: normal;
-      font-weight: 700;
-      font-size: $headingSize;
+  padding-bottom: 2rem;
+  .dragonWrap {
+    background-color: $primaryColor;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid $secondaryColor;
+    .importantDragon {
+      text-align: center;
+      h1 {
+        color: $white;
+        font-family: "Gotham";
+        font-style: normal;
+        font-weight: 700;
+        font-size: $headingSize;
+      }
+      p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        color: $white;
+        width: 100%;
+        padding-left: 15rem;
+        padding-right: 15rem;
+      }
     }
-    p {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 25px;
-      color: $white;
-      width: 100%;
-      padding-left: 15rem;
-      padding-right: 15rem;
+    .important {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      .wraper {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: $textSize;
+        width: 248px;
+        height: 62px;
+        background: $secondaryColor;
+        border-radius: 6px;
+      }
+      .wrap {
+        width: 248px;
+        height: 62px;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 31px;
+        background: $cgBlue;
+        border-radius: 6px;
+      }
     }
-  }
-  .important {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    .wraper {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 700;
-      font-size: $textSize;
-      width: 248px;
-      height: 62px;
-      background: $secondaryColor;
-      border-radius: 6px;
-    }
-    .wrap {
-      width: 248px;
-      height: 62px;
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 31px;
-      background: $cgBlue;
-      border-radius: 6px;
-    }
-    p {
+    .payment {
+      padding: 1px;
+      position: relative;
+      .paymentNeeded {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: $textSizeSm;
+
+        text-align: center;
+        right: 527px;
+        color: $best;
+        position: absolute;
+      }
     }
   }
 }
