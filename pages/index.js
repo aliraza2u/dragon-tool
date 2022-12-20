@@ -22,8 +22,6 @@ export default function Home() {
 
       <main>
         <Navbar />
-        <ClientDragon />
-        <FaqDragon />
         <HeroSection />
         <Divider />
         <DragonAffordable />
