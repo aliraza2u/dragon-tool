@@ -18,7 +18,7 @@ const DragonSlider = () => {
           className={styles.sliderButton}
         />
       </div>
-      <Slider {...settings}>
+      <Slider {...settings} className={styles.tools}>
         {slider.map((x, i) => (
           <div key={i} className={styles.sliderTools}>
             <h1>{x.sliderHeading}</h1>
