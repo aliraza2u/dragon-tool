@@ -86,9 +86,6 @@
   }
 }
 .pamdaWrap {
-  // width: 488px;
-  height: 346px;
-
   position: relative;
   display: flex;
   justify-content: center;
@@ -105,7 +102,7 @@
     }
   }
 }
-.copyRighr {
+.copyRight {
   background-color: $secondaryColor;
   p {
     font-family: "Poppins";
@@ -114,5 +111,7 @@
     font-size: 20px;
     text-align: center;
     color: $white;
+    margin: 0;
+    padding: 1rem 0;
   }
 }
