@@ -57,7 +57,7 @@ const Footer = () => {
           </Col>
         </Row>
       </Container>
-      <div className={styles.copyRighr}>
+      <div className={styles.copyRight}>
         <p>Copyright © 2022 | All Rights Reserved by Lotus Chips</p>
       </div>{" "}
     </div>

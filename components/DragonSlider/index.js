@@ -3,73 +3,85 @@ import styles from "../DragonSlider/DragonSlider.module.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import CustomButton from "../CustomButton/index";
-import { slider } from "./SliderApi";
+import { priceListData } from "../../mock/data";
+import { IoIosArrowForward } from "react-icons/io";
+
 const DragonSlider = () => {
-  return (
-    <div className={styles.sliderWrapper}>
-      <div className={styles.sliderHeading}>
-        <h1>Pricing & Plan</h1>
-        <p>What Makes us Best !</p>
-      </div>
-      <CustomButton children={"Most Popular"} className={styles.sliderButton} />
-      <Slider {...settings}>
-        {slider.map((x, i) => (
-          <div key={i} className={styles.sliderDragon}>
-            <div className={styles.sliderHeading}>
-              <h1>Pricing & Plan</h1>
-              <p>What Makes us Best !</p>
+    return (
+        <div className={styles.priceListsWrapper}>
+            <div className={styles.titleBar}>
+                <h1>Pricing & Plan</h1>
+                <p>What Makes us Best !</p>
             </div>
-            <h1>{x.sliderHeading}</h1>
-            <p>{x.sliderParagrafh}</p>
-            <div className={styles.list}>
-              <ul>
-                <li>{x.dragonSliderList}</li>
-                <li>nmmmm</li>
-                <li>nmmmm</li>
-                <li>nmmmm</li>
-              </ul>
-            </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
-  );
+
+            <Slider {...settings} className={styles.slider}>
+                {priceListData.map((data, i) => (
+                    <div key={i}>
+                        {i % 2 != 0 && (
+                            <div className={styles.recommended}>
+                                <p>Most Popular</p>
+                            </div>
+                        )}
+
+                        <div className={`${styles.slide} ${i % 2 == 0 ? "" : styles.activeSlide}`}>
+                            <div>
+                                <header>
+                                    <h1>{data.title}</h1>
+                                </header>
+                                <h1 className={styles.priceTitle}>{data.price}</h1>
+                                <ul className={styles.listWrapper}>
+                                    {data.list.map((x) => (
+                                        <li key={x}>{x}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <footer>
+                                <p>
+                                    <IoIosArrowForward size={22} />
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+                ))}
+            </Slider>
+        </div>
+    );
 };
 
 export default DragonSlider;
 
 const settings = {
-  dots: false,
-  infinite: false,
-  speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  initialSlide: 0,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    centerMode: true,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+            },
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2,
+            },
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
 };

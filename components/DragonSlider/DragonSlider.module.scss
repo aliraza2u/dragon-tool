@@ -1,70 +1,103 @@
 @import "../../styles/_variables";
 
-.sliderWrapper {
-  background-color: $primaryColor;
-  .sliderHeading {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    h1 {
-      font-family: "Gotham";
-      font-style: normal;
-      font-weight: 700;
-      font-size: $headingSize;
-      text-align: center;
-      color: $secondaryColor;
-    }
-    p {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 500;
-      font-size: $textSize;
-      text-align: center;
-      color: $white;
-    }
-  }
-  .sliderButton {
-    width: 267px;
-    height: 46px;
-    border-radius: 4px;
-    background-color: $red;
-    color: $white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .sliderDragon {
-    width: 566px;
-    border-radius: 6px;
-    overflow: hidden;
-    position: relative;
-    background-color: $secondaryColor;
-    h1 {
-      text-align: center;
-      color: #fff;
-      background-color: $cgBlue;
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-    }
-    p {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 41px;
-      text-align: center;
-    }
-    .list {
-      ul {
-        list-style: none;
-        li {
-          font-family: "Poppins";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 20px;
-          color: $white;
+.priceListsWrapper {
+    background-color: $primaryColor;
+    padding: $verticalPaddingLg;
+    .titleBar {
+        text-align: center;
+        padding-bottom: 50px;
+        h1 {
+            color: $secondaryColor;
+            font-size: $headingSize;
         }
-      }
+        p {
+            font-size: $textSize;
+            color: $lightGray;
+        }
     }
-  }
+    .slider {
+        min-height: 1000px;
+        .recommended {
+            display: flex;
+            justify-content: center;
+            p {
+                text-align: center;
+                padding: 8px;
+                background-color: $red;
+                margin: 0;
+                width: 40%;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+        }
+        .slide {
+            color: $white;
+            background-color: $footerColor;
+            min-height: 118vh;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 60px;
+            @media #{$xl} {
+                min-height: 148vh;
+            }
+            header {
+                background-color: $cgBlue;
+                height: 85px;
+                font-size: $textSizeLg;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .priceTitle {
+                padding: 2rem 0;
+                text-align: center;
+                font-size: 48px;
+                @media #{$lg,$xl} {
+                    font-size: $textSizeLg;
+                }
+            }
+            .listWrapper {
+                list-style-type: none;
+                li {
+                    font-size: $textSizeSm;
+                    line-height: 42px;
+                    &::before {
+                        content: "✓";
+                        font-size: $textNormal;
+                        margin-right: 1rem;
+                        color: $secondaryColor;
+                    }
+                }
+            }
+            footer {
+                background-color: $secondaryColor;
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                p {
+                    display: inline-block;
+                    margin: 0;
+                    background-color: $cgBlue;
+                    height: 100%;
+                    width: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        .activeSlide {
+            background-color: $secondaryColor;
+            min-height: 122vh;
+            margin-top: 0;
+            @media #{$xl} {
+                min-height: 150vh;
+            }
+            footer {
+                background-color: $footerColor;
+            }
+        }
+    }
 }
