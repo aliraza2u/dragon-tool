@@ -1,6 +1,7 @@
 @import "../../styles/_variables";
 
 .importantDragonWrapper {
+<<<<<<< HEAD
   background-color: $background;
   padding-bottom: 2rem;
   .dragonWrap {
@@ -26,6 +27,18 @@
         padding-left: 15rem;
         padding-right: 15rem;
       }
+=======
+  background-color: $primaryColor;
+  padding-bottom: 1px;
+  .importantDragon {
+    text-align: center;
+    h1 {
+      color: $white;
+      font-family: "Gotham";
+      font-style: normal;
+      font-weight: 700;
+      font-size: $headingSize;
+>>>>>>> 02a6ad8a74e4352288b79e7a248a843ddf26ae29
     }
     .important {
       display: flex;

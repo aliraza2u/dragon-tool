@@ -1,6 +1,7 @@
 @import "../../styles/_variables";
 
 .clientWrapper {
+<<<<<<< HEAD
   width: 100%;
   background-color: $background;
   .title {
@@ -57,6 +58,11 @@
         }
       }
       .clientDetails {
+=======
+    width: 100%;
+    background-color: $primaryColor;
+    .title {
+>>>>>>> 02a6ad8a74e4352288b79e7a248a843ddf26ae29
         display: flex;
         justify-content: flex-start;
         align-items: center;
