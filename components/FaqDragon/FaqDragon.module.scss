@@ -1,34 +1,31 @@
 @import "../../styles/_variables";
 
-.faqDragonWrapper {
-  background-color: $primaryColor;
-  padding-top: 7rem;
-  padding-bottom: 6rem;
-  .FaqDragon {
-    text-align: center;
-    padding-bottom: 3rem;
-    h1 {
-      color: $white;
-      font-family: "Gotham";
-      font-style: normal;
-      font-weight: 700;
-      font-size: $headingSize;
+.faqWrapper {
+    background-color: $primaryColor;
+    padding: $verticalPaddingLg;
+    .title {
+        text-align: center;
+        padding-bottom: 3rem;
+        color: $white;
+        font-weight: 700;
+        font-size: $headingSize;
     }
-  }
-  .faqWrapper {
-    h3 {
-      font-family: "Gotham";
-      font-style: normal;
-      font-weight: 700;
-      font-size: $textSizeLg;
-      color: $white;
+    .faqRow {
+        color: $white;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        place-items: center;
+        padding: $horizontalPaddingLg;
+        .faqCol {
+            width: 80%;
+            margin-bottom: 60px;
+            h1{
+              font-size: $textSizeLg;
+              margin-bottom: 28px;
+            }
+            p{
+              font-size: $textSizeSm;
+            }
+        }
     }
-    p {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 400;
-      font-size: $textSizeSm;
-      color: $white;
-    }
-  }
 }

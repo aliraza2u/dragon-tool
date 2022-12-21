@@ -1,25 +1,18 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { faqData } from "../../mock/data";
 import styles from "../FaqDragon/FaqDragon.module.scss";
-import { faq } from "./FaqDragonApi";
 const FaqDragon = () => {
     return (
-        <div className={styles.faqDragonWrapper}>
-            <div className={styles.FaqDragon}>
-                <h1>FAQ's</h1>
+        <div className={styles.faqWrapper}>
+            <h1 className={styles.title}>FAQ's</h1>
+            <div className={styles.faqRow}>
+                {faqData.map((item) => (
+                    <div key={item.title} className={styles.faqCol}>
+                        <h1>{item.title}</h1>
+                        <p>{item.description}</p>
+                    </div>
+                ))}
             </div>
-            <Container>
-                <Row>
-                    {faq.map((x, i) => (
-                        <Col key={i} xs={12} md={6}>
-                            <div className={styles.faqWrapper}>
-                                <h3>{x.faqHeading}</h3>
-                                <p>{x.faqDetail}</p>
-                            </div>
-                        </Col>
-                    ))}
-                </Row>
-            </Container>
         </div>
     );
 };
