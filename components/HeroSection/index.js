@@ -27,15 +27,13 @@ const HeroSection = () => {
                   Affordable to Them.
                 </p>
               </div>
-              {/* <div className={styles.buttonWrap}> */}
               <CustomButton
                 children={"Signup Today"}
                 className={styles.signupDragon}
               />
-              {/* </div> */}
             </div>
           </Col>
-          <Col xs={12} md={6}>
+          <Col xs={12} md={{span:4, offset:2}}>
             <div className={styles.imageBackground}>
               <div className={styles.imageWrapper}>
                 <Image src={logo} className={styles.img} />
