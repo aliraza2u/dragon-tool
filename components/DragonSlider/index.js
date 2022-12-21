@@ -12,22 +12,23 @@ const DragonSlider = () => {
         <h1>Pricing & Plan</h1>
         <p>What Makes us Best !</p>
       </div>
-      <CustomButton children={"Most Popular"} className={styles.sliderButton} />
+      <div className={styles.buttonWrap}>
+        <CustomButton
+          children={"Most Popular"}
+          className={styles.sliderButton}
+        />
+      </div>
       <Slider {...settings}>
         {slider.map((x, i) => (
-          <div key={i} className={styles.sliderDragon}>
-            <div className={styles.sliderHeading}>
-              <h1>Pricing & Plan</h1>
-              <p>What Makes us Best !</p>
-            </div>
+          <div key={i} className={styles.sliderTools}>
             <h1>{x.sliderHeading}</h1>
             <p>{x.sliderParagrafh}</p>
+
             <div className={styles.list}>
               <ul>
-                <li>{x.dragonSliderList}</li>
-                <li>nmmmm</li>
-                <li>nmmmm</li>
-                <li>nmmmm</li>
+                {x.list.map((y, index) => (
+                  <li key={index}>{y}</li>
+                ))}
               </ul>
             </div>
           </div>

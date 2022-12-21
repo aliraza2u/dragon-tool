@@ -19,50 +19,56 @@
       font-weight: 500;
       font-size: $textSize;
       text-align: center;
-      color: $white;
+      color: $best;
     }
   }
-  .sliderButton {
-    width: 267px;
-    height: 46px;
-    border-radius: 4px;
-    background-color: $red;
-    color: $white;
+  .buttonWrap {
     display: flex;
     justify-content: center;
     align-items: center;
+    .sliderButton {
+      width: 267px;
+      height: 46px;
+      border-radius: 4px;
+      background-color: $red;
+      color: $white;
+    }
   }
-  .sliderDragon {
-    width: 566px;
+  .sliderTools {
     border-radius: 6px;
     overflow: hidden;
     position: relative;
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
+    height: 100vh;
+    display: inline-block;
     h1 {
-      text-align: center;
-      color: #fff;
       background-color: $cgBlue;
       font-family: "Poppins";
       font-style: normal;
       font-weight: 700;
-      font-size: 40px;
+      font-size: $textSizeLg;
+      text-align: center;
+      color: $white;
+      margin-bottom: 1rem;
     }
     p {
       font-family: "Poppins";
       font-style: normal;
       font-weight: 700;
-      font-size: 41px;
+      font-size: $textSizeLg;
       text-align: center;
+      color: $white;
+      margin-bottom: 2rem;
     }
     .list {
       ul {
-        list-style: none;
         li {
           font-family: "Poppins";
           font-style: normal;
-          font-weight: 500;
-          font-size: 20px;
+          font-weight: 400;
+          font-size: $textSizeSm;
           color: $white;
+          list-style: none;
         }
       }
     }
