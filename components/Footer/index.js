@@ -13,10 +13,6 @@ import Col from "react-bootstrap/Col";
 const Footer = () => {
   return (
     <div className={styles.footerWrapper}>
-      <Container>
-        <Row>
-          <Col sm={10}>
-            {" "}
             <div className={styles.imageWrapper}>
               <Image src={dragonWhiteLogo} className={styles.wrapper} />
             </div>
@@ -47,19 +43,14 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </Col>
-          <Col sm={2}>
-            <div className={styles.pamdaWrap}>
+            <div className={styles.footerImageWrapper}>
               <div className={styles.dragonPanda}>
                 <Image src={dragonPanda} className={styles.panda} />
               </div>
             </div>
-          </Col>
-        </Row>
-      </Container>
       <div className={styles.copyRight}>
         <p>Copyright © 2022 | All Rights Reserved by Lotus Chips</p>
-      </div>{" "}
+      </div>
     </div>
   );
 };
