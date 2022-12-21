@@ -1,28 +1,31 @@
 @import "../../styles/_variables";
 
 .choosingDragonSection {
-  .titleBox{
-    text-align: center;
-    color: $white;
-    background-color: $primaryColor;
-    padding: 4rem 0;
-    h1{
-      font-size: $headingSize;
+    .titleBox {
+        text-align: center;
+        color: $white;
+        background-color: $primaryColor;
+        padding: 4rem 0;
+        h1 {
+            font-size: $headingSize;
+        }
+        p {
+            margin: 0;
+            font-size: $textSize;
+            color: $lightGray;
+        }
     }
-    p{
-      margin: 0;
-      font-size: $textSize;
-      color:  $lightGray;;
-    }
-  }
     .choosingDragonWraper {
         background-color: $secondaryColor;
         height: 525px;
         display: flex;
         align-items: center;
         justify-content: center;
-        @media ($xl) {
-            height: 455px;
+        @media #{$lg} {
+            height: 340px;
+        }
+        @media #{$xl} {
+            height: 430px;
         }
         .imageBackgroundWrapper {
             height: 100%;
@@ -32,22 +35,46 @@
                 position: absolute;
                 left: -28%;
                 top: 30%;
+                @media #{$lg} {
+                    left: -40%;
+                }
+                @media #{$xl} {
+                    left: -42%;
+                    top: 35%;
+                }
             }
             .victoryCardWrapper {
                 position: absolute;
                 bottom: 12%;
                 left: -42%;
+                @media #{$lg} {
+                    left: -45%;
+                }
+                @media #{$xl} {
+                    left: -49%;
+                }
             }
             .clockCardWrapper {
                 position: absolute;
                 top: 24%;
                 right: -24%;
+                @media #{$lg} {
+                    top: 20%;
+                    right: -36%;
+                }
+                @media #{$xl} {
+                    right: -30%;
+                }
             }
             .imageBackground {
                 background-color: $cgBlue;
                 height: 100%;
                 -webkit-clip-path: circle(52% at 50% 100%);
                 clip-path: circle(50% at 52% 100%);
+                @media #{$xl} {
+                    -webkit-clip-path: circle(52% at 50% 100%);
+                    clip-path: circle(53% at 52% 100%);
+                }
             }
             .imageWrapper {
                 position: absolute;
@@ -59,10 +86,15 @@
                     height: 100%;
                     object-fit: contain;
                 }
-                @media ($xl) {
-                    bottom: -32px;
-                    transform: translate(20%, 0);
-                    width: 70%;
+                @media #{$xl} {
+                    bottom: -29px;
+                    transform: translate(10%, 0);
+                    width: 80%;
+                }
+                @media #{$lg} {
+                    bottom: -22px;
+                    transform: translate(24%, 0);
+                    width: 68%;
                 }
             }
         }

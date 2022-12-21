@@ -1,85 +1,74 @@
 @import "../../styles/_variables";
 
 .sliderWrapper {
-  background-color: $primaryColor;
-  .sliderHeading {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    h1 {
-      font-family: "Gotham";
-      font-style: normal;
-      font-weight: 700;
-      font-size: $headingSize;
-      text-align: center;
-      color: $secondaryColor;
-    }
-    p {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 500;
-      font-size: $textSize;
-      text-align: center;
-      color: $lightGray;
-    }
-  }
-  .buttonWrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .sliderButton {
-      width: 267px;
-      height: 46px;
-      border-radius: 4px;
-      background-color: $red;
-      color: $white;
-    }
-  }
-  .tools {
-    gap: 1.5rem;
-    .sliderTools {
-      border-radius: 6px;
-      overflow: hidden;
-      position: relative;
-      background-color: $primaryColor;
-      height: 100vh;
-      display: inline-block;
-      &:nth-child(even) {
-        background-repeat: no-repeat;
-        background-color: red;
-        color: $white;
-      }
-
-      h1 {
-        background-color: $cgBlue;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 700;
-        font-size: $textSizeLg;
-        text-align: center;
-        color: $white;
-        margin-bottom: 1rem;
-      }
-      p {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 700;
-        font-size: $textSizeLg;
-        text-align: center;
-        color: $white;
-        margin-bottom: 2rem;
-      }
-      .list {
-        ul {
-          li {
+    background-color: $primaryColor;
+    .sliderHeading {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        h1 {
+            font-family: "Gotham";
+            font-style: normal;
+            font-weight: 700;
+            font-size: $headingSize;
+            text-align: center;
+            color: $secondaryColor;
+        }
+        p {
             font-family: "Poppins";
             font-style: normal;
-            font-weight: 400;
-            font-size: $textSizeSm;
-            color: $white;
-            list-style: none;
-          }
+            font-weight: 500;
+            font-size: $textSize;
+            text-align: center;
+            color: $lightGray;
         }
-      }
     }
-  }
+    .buttonWrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .sliderButton {
+            width: 267px;
+            height: 46px;
+            border-radius: 4px;
+            background-color: $red;
+            color: $white;
+        }
+    }
+    .tools {
+        // gap: 1.5rem;
+        .sliderTools {
+            background-color: $primaryColor;
+            h1 {
+                background-color: $cgBlue;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 700;
+                font-size: $textSizeLg;
+                text-align: center;
+                color: $white;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 700;
+                font-size: $textSizeLg;
+                text-align: center;
+                color: $white;
+                margin-bottom: 2rem;
+            }
+            .list {
+                ul {
+                    li {
+                        font-family: "Poppins";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: $textSizeSm;
+                        color: $white;
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
 }
