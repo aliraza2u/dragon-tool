@@ -2,8 +2,8 @@
 
 .herosection {
   background-color: $primaryColor;
-  padding-bottom: 6rem;
   padding-top: 6rem;
+  padding-bottom: 16rem;
   .heading {
     width: 100%;
     height: 376px;
@@ -60,7 +60,7 @@
     border-radius: 50%;
     position: relative;
     @media #{$xl} {
-     width: 350px;
+      width: 350px;
       height: 350px;
     }
     .imageWrapper {
