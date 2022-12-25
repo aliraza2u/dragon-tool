@@ -4,8 +4,12 @@
     width: 415px;
     height: 84px;
     border-radius: 8px;
-    @media #{$lg, $xl} {
-        width: 350px;
+    @media #{$xl} {
+        width: 315px;
+        height: 60px;
+    }
+    @media #{$lg} {
+        width: 280px;
         height: 60px;
     }
     .contentWrapper {

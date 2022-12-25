@@ -28,7 +28,7 @@ const SmartCard = ({ tilte, slug, tooltipContent }) => {
             <Tooltip
                 anchorId={slug}
                 content={tilte}
-                place="bottom"
+                place="top"
                 className={styles.tooltipContentStyle}
             >
                 <div>{tooltipContent}</div>
