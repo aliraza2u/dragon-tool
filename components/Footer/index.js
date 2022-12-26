@@ -7,6 +7,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { CgFacebook } from "react-icons/cg";
 import dragonPanda from "../../public/dragonPanda.png";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,11 +22,9 @@ const Footer = () => {
         <p>E2EE Policy</p>
       </div>
       <div className={styles.dragonIcon}>
-        <div className={styles.imagewrapper}>
-          <Image src={facebook} className={styles.wrap} />
-        </div>
-        <AiOutlineInstagram className={styles.Wrapper} />
-        <AiOutlineTwitter className={styles.Wrapper} />
+        <FaFacebookSquare className={styles.socialIcon} />
+        <AiOutlineInstagram className={styles.socialIcon} />
+        <AiOutlineTwitter className={styles.socialIcon} />
       </div>
       <div className={styles.footerImageWrapper}>
         <div className={styles.dragonPanda}>
