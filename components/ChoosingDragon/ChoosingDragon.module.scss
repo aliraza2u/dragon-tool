@@ -8,11 +8,26 @@
         padding: 4rem 0;
         h1 {
             font-size: $headingSize;
+            @media #{$sm} {
+                height: 19px;
+                font-family: "Gotham";
+                font-style: normal;
+                font-weight: 700;
+                font-size: $smHeadingSize;
+                text-align: center;
+            }
         }
         p {
             margin: 0;
             font-size: $textSize;
             color: $lightGray;
+            @media #{$sm} {
+                font-size: $smTextLg;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 600;
+                padding-top: 2px;
+            }
         }
     }
     .choosingDragonWraper {
