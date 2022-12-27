@@ -43,6 +43,9 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 1.5rem;
+        @media #{$sm} {
+            margin-bottom: -1%;
+        }
         .card {
             @media #{$sm} {
                 padding: 1.3rem;

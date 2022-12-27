@@ -71,6 +71,8 @@
                 bottom: -34px;
                 transform: translate(18%, 0);
                 width: 620px;
+                @media #{$sm} {
+                }
                 @media #{$xl} {
                     bottom: -29px;
                     width: 500px;
