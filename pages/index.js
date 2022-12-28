@@ -26,7 +26,7 @@ export default function Home() {
         <Divider />
         <DragonAffordable />
         <ChoosingDragon />
-        <DragonSlider />
+        {/* <DragonSlider /> */}
         <ClientDragon />
         <FaqDragon />
         <ImportantDragon />
