@@ -23,7 +23,7 @@ const DragonSlider = () => {
                             </div>
                         )}
 
-                        <div className={`${styles.slide} ${i % 2 == 0 ? "" : styles.activeSlide}`}>
+                        <div className={`${styles.slide} ${i % 2 == 0 ? styles.otherSlides : styles.activeSlide}`}>
                             <div>
                                 <header>
                                     <h1>{data.title}</h1>
@@ -51,18 +51,17 @@ const DragonSlider = () => {
 export default DragonSlider;
 
 const settings = {
-    dots: false,
+    dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     initialSlide: 0,
-    centerMode: true,
     responsive: [
         {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 4,
+                slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
                 dots: true,
@@ -85,3 +84,21 @@ const settings = {
         },
     ],
 };
+// const settings = {
+//     dots: false,
+//     infinite: false,
+//     speed: 500,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     initialSlide: 0,
+//     centerMode: true,
+//     responsive: [
+//         {
+//             breakpoint: 480,
+//             settings: {
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1,
+//             },
+//         },
+//     ],
+// };
