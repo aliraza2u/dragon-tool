@@ -13,7 +13,6 @@ const DragonSlider = () => {
                 <h1>Pricing & Plan</h1>
                 <p>What Makes us Best !</p>
             </div>
-
             <Slider {...settings} className={styles.slider}>
                 {priceListData.map((data, i) => (
                     <div key={i}>
@@ -22,8 +21,11 @@ const DragonSlider = () => {
                                 <p>Most Popular</p>
                             </div>
                         )}
-
-                        <div className={`${styles.slide} ${i % 2 == 0 ? styles.otherSlides : styles.activeSlide}`}>
+                        <div
+                            className={`${styles.slide} ${
+                                i % 2 == 0 ? styles.otherSlides : styles.activeSlide
+                            }`}
+                        >
                             <div>
                                 <header>
                                     <h1>{data.title}</h1>
@@ -56,7 +58,7 @@ const settings = {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
-    initialSlide: 0,
+    initialSlide: 1,
     responsive: [
         {
             breakpoint: 1024,
@@ -84,21 +86,3 @@ const settings = {
         },
     ],
 };
-// const settings = {
-//     dots: false,
-//     infinite: false,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     initialSlide: 0,
-//     centerMode: true,
-//     responsive: [
-//         {
-//             breakpoint: 480,
-//             settings: {
-//                 slidesToShow: 1,
-//                 slidesToScroll: 1,
-//             },
-//         },
-//     ],
-// };
