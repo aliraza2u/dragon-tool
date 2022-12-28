@@ -4,7 +4,13 @@
   background-color: $white;
   height: 8px;
   position: relative;
+  @media #{$sm} {
+    height: 4px;
+  }
   .imageWrapper {
+    @media #{$sm} {
+      display: none;
+    }
     width: 343px;
     height: 342px;
     padding-top: 141px;

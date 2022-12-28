@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../ClientDragon/ClientDragon.module.scss";
 import Image from "next/image";
 import client from "../../public/client.png";
-import { card } from "./CardApi";
+import { card } from "../../mock/data";
 import userIcon from "../../public/user.png";
 import primaryInvertedCommas from "../../public/semicolun.png";
 import secondaryInvertedCommas from "../../public/blackInvertedCommas.png";

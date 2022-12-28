@@ -1,6 +1,9 @@
 @import "../../styles/_variables";
 
 .choosingDragonSection {
+    @media #{$sm} {
+        background-color: $primaryColor;
+    }
     .titleBox {
         text-align: center;
         color: $white;
@@ -8,11 +11,26 @@
         padding: 4rem 0;
         h1 {
             font-size: $headingSize;
+            @media #{$sm} {
+                height: 19px;
+                font-family: "Gotham";
+                font-style: normal;
+                font-weight: 700;
+                font-size: $smHeadingSize;
+                text-align: center;
+            }
         }
         p {
             margin: 0;
             font-size: $textSize;
             color: $lightGray;
+            @media #{$sm} {
+                font-size: $smTextLg;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 600;
+                padding-top: 2px;
+            }
         }
     }
     .choosingDragonWraper {
@@ -21,11 +39,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media #{$xl} {
+            height: 430px;
+        }
         @media #{$lg} {
             height: 330px;
         }
-        @media #{$xl} {
-            height: 430px;
+        @media #{$md} {
+            clip-path: circle(70% at 50% 70%);
+        }
+        @media #{$sm} {
+            clip-path: circle(69.3% at 49% 64%);
+            height: 490px;
         }
         .imageBackgroundWrapper {
             height: 100%;
@@ -50,6 +75,9 @@
                     -webkit-clip-path: circle(52% at 50% 100%);
                     clip-path: circle(230px at 52% 100%);
                 }
+                @media #{$sm, $md} {
+                    display: none;
+                }
             }
             .imageWrapper {
                 position: absolute;
@@ -63,7 +91,15 @@
                 @media #{$lg} {
                     bottom: -22px;
                     transform: translate(10%, 0);
-                   width: 380px;
+                    width: 380px;
+                }
+                @media #{$md} {
+                    width: 350px;
+                }
+                @media #{$sm} {
+                    width: 290px;
+                    bottom: -13px;
+                    transform: translate(12%, 0);
                 }
                 img {
                     width: 100%;
@@ -74,24 +110,36 @@
             .cashCardWrapper {
                 position: absolute;
                 transform: translate(-270px, 226%);
+                @media #{$xl} {
+                    transform: translate(-200px, 254%);
+                }
                 @media #{$lg} {
                     transform: translate(-235px, 110px);
                 }
-                @media #{$xl} {
-                    transform: translate(-200px, 254%);
+                @media #{$md} {
+                }
+                @media #{$sm} {
+                    transform: translate(12px, 72px);
                 }
             }
             .victoryCardWrapper {
                 position: absolute;
                 bottom: 55px;
                 transform: translate(-350px, 0);
+                @media #{$xl} {
+                    bottom: 55px;
+                    transform: translate(-275px, 0);
+                }
                 @media #{$lg} {
                     bottom: 30px;
                     transform: translate(-275px, 0);
                 }
-                @media #{$xl} {
-                    bottom: 55px;
-                    transform: translate(-275px, 0);
+                @media #{$md} {
+                }
+                @media #{$sm} {
+                    transform: translate(51px, 131px);
+                    top: 0;
+                    bottom: auto;
                 }
             }
             .clockCardWrapper {
@@ -101,6 +149,12 @@
                 @media #{$lg} {
                     top: 20%;
                     right: -40%;
+                }
+                @media #{$md} {
+                }
+                @media #{$sm} {
+                    top: 38%;
+                    right: 4%;
                 }
             }
         }

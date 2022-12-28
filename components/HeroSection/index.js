@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <div className={styles.herosection}>
       <Container>
-        <Row>
+        <Row className={styles.herosectionWrap}>
           <Col xs={12} md={6}>
             <div className={styles.heading}>
               <div className={styles.dragon}>
@@ -27,16 +27,20 @@ const HeroSection = () => {
                   Affordable to Them.
                 </p>
               </div>
-              <CustomButton
-                children={"Signup Today"}
-                className={styles.signupDragon}
-              />
+              <div className={styles.signUp}>
+                <CustomButton
+                  children={"Signup Today"}
+                  className={styles.signupDragon}
+                />
+              </div>
             </div>
           </Col>
-          <Col xs={12} md={{span:4, offset:2}}>
-            <div className={styles.imageBackground}>
-              <div className={styles.imageWrapper}>
-                <Image src={logo} className={styles.img} />
+          <Col xs={12} md={{ span: 4, offset: 2 }}>
+            <div className={styles.dragonWrap}>
+              <div className={styles.imageBackground}>
+                <div className={styles.imageWrapper}>
+                  <Image src={logo} className={styles.img} />
+                </div>
               </div>
             </div>
           </Col>

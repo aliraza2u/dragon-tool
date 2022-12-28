@@ -5,12 +5,14 @@ import index from "../CustomButton/index";
 import CustomButton from "../CustomButton/index";
 import dragonWhiteLogo from "../../public/dragonWhiteLogo.png";
 import login from "../../public/login.png";
+import { BiMenu } from "react-icons/bi";
+
 const Navbar = () => {
   return (
     <div className={styles.navbarWrapper}>
       <div className={styles.navbar}>
         <div className={styles.imageWrap}>
-          <Image src={dragonWhiteLogo} className={styles.wrap} />
+          <Image src={dragonWhiteLogo} />
         </div>
         <div className={styles.text}>
           <div className={styles.buyText}>
@@ -25,6 +27,9 @@ const Navbar = () => {
           <div className={styles.sign}>
             <CustomButton children={"Signup Today"} className={styles.signup} />
           </div>
+        </div>
+        <div className={styles.menuWrapper}>
+          <BiMenu />
         </div>
       </div>
     </div>

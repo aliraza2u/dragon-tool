@@ -7,47 +7,30 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { CgFacebook } from "react-icons/cg";
 import dragonPanda from "../../public/dragonPanda.png";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { FaFacebookSquare } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <div className={styles.footerWrapper}>
-            <div className={styles.imageWrapper}>
-              <Image src={dragonWhiteLogo} className={styles.wrapper} />
-            </div>
-            <div className={styles.dragonFooter}>
-              <ul className={styles.dragonlist}>
-                <li>Home</li>
-                <li>Privacy Policy</li>
-                <li>Refund Policy</li>
-                <li>E2EE Policy</li>
-              </ul>
-            </div>
-            <div className={styles.dragonIcon}>
-              <ul className={styles.facebookWrapper}>
-                <li>
-                  <div className={styles.facebookIcon}>
-                    <CgFacebook className={styles.facebook} />
-                  </div>
-                </li>
-                <li>
-                  <div className={styles.instragramIcon}>
-                    <AiOutlineInstagram className={styles.instragram} />
-                  </div>
-                </li>
-                <li>
-                  <div className={styles.twitterIcon}>
-                    <AiOutlineTwitter className={styles.twitter} />
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div className={styles.footerImageWrapper}>
-              <div className={styles.dragonPanda}>
-                <Image src={dragonPanda} className={styles.panda} />
-              </div>
-            </div>
+      <div className={styles.imageWrapper}>
+        <Image src={dragonWhiteLogo} className={styles.wrapper} />
+      </div>
+      <div className={styles.dragonFooter}>
+        <p>Home</p>
+        <p>Privacy Policy</p>
+        <p>Refund Policy</p>
+        <p>E2EE Policy</p>
+      </div>
+      <div className={styles.dragonIcon}>
+        <FaFacebookSquare className={styles.socialIcon} />
+        <AiOutlineInstagram className={styles.socialIcon} />
+        <AiOutlineTwitter className={styles.socialIcon} />
+      </div>
+      <div className={styles.footerImageWrapper}>
+        <div className={styles.dragonPanda}>
+          <Image src={dragonPanda} className={styles.panda} />
+        </div>
+      </div>
       <div className={styles.copyRight}>
         <p>Copyright © 2022 | All Rights Reserved by Lotus Chips</p>
       </div>

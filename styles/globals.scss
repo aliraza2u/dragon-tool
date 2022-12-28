@@ -1,3 +1,4 @@
+@import "./_variables";
 html,
 body {
     padding: 0;
@@ -34,12 +35,17 @@ p {
     }
 }
 
-.slick-track {
-    display: flex !important;
-    justify-content: space-between !important;
-    width: 100% !important;
+.slick-next {
+    right: 6px !important;
+    z-index: 10;
+    &::before {
+        color: $secondaryColor !important;
+    }
 }
-
-.slick-slide{
-    width: 30% !important;
+.slick-prev {
+    left: 6px !important;
+    z-index: 10;
+    &::before {
+        color: $secondaryColor !important;
+    }
 }

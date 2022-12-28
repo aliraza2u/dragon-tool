@@ -40,7 +40,7 @@
             flex-direction: column;
             justify-content: space-between;
             margin-top: 60px;
-          
+
             header {
                 background-color: $cgBlue;
                 height: 85px;
@@ -91,9 +91,17 @@
         .activeSlide {
             background-color: $secondaryColor;
             margin-top: 0;
+            @media #{$sm} {
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
             footer {
                 background-color: $footerColor;
             }
+        }
+        .otherSlides {
+            margin-left: 2rem;
+            margin-right: 2rem;
         }
     }
 }
