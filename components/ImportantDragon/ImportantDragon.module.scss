@@ -76,15 +76,17 @@
                     font-size: $textSizeSm;
 
                     text-align: center;
-                    right: 527px;
+                    right: 40%;
                     color: $lightGray;
                     position: absolute;
                     @media #{$sm} {
                         font-family: "Poppins";
                         font-style: normal;
                         font-weight: 400;
-
-                        font-size: $textSizeSm;
+                        font-family: "Poppins";
+                        font-size: 6px;
+                        right: 29%;
+                        font-size: $smTextSizeMinimum;
                     }
                 }
             }
