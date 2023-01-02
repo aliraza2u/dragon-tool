@@ -18,6 +18,12 @@
                 font-style: normal;
                 font-weight: 700;
                 font-size: $headingSize;
+                @media #{$md} {
+                    font-family: "Gotham";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 46px;
+                }
                 @media #{$sm} {
                     font-family: "Gotham";
                     font-style: normal;
@@ -33,6 +39,12 @@
                 color: $white;
                 width: 100%;
                 padding: 0 18%;
+                @media #{$sm,$md} {
+                    font-family: "Poppins";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: $textSizeSm;
+                }
                 @media #{$sm} {
                     font-family: "Poppins";
                     font-style: normal;
@@ -79,6 +91,9 @@
                     right: 40%;
                     color: $lightGray;
                     position: absolute;
+                    @media #{$md} {
+                        right: 22%;
+                    }
                     @media #{$sm} {
                         font-family: "Poppins";
                         font-style: normal;

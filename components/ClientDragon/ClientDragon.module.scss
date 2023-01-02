@@ -3,13 +3,14 @@
 .clientWrapper {
     width: 100%;
     background-color: $primaryColor;
+    margin-top: -1%;
     .title {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 1rem;
         padding-bottom: 4rem;
-        @media #{$sm} {
+        @media #{$sm,$md} {
             flex-direction: column;
             margin-top: -1%;
         }
@@ -29,6 +30,13 @@
             color: $white;
             font-weight: 700;
             font-size: $headingSize;
+            @media #{$md} {
+                font-family: "Gotham";
+                font-style: normal;
+                font-weight: 700;
+                font-size: $headingSizenormal;
+                text-align: center;
+            }
             @media #{$sm} {
                 font-family: "Gotham";
                 font-style: normal;
@@ -43,11 +51,11 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 1.5rem;
-        @media #{$sm} {
+        @media #{$sm ,$md} {
             margin-bottom: -1%;
         }
         .card {
-            @media #{$sm} {
+            @media #{$sm,$md} {
                 padding: 1.3rem;
             }
             display: flex;
@@ -74,6 +82,13 @@
                     top: -18px;
                     left: 60px;
                     width: calc(100% - 15%);
+                    @media #{$md} {
+                        font-family: "Gotham";
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: $textSizeSm;
+                        width: 62%;
+                    }
                     @media #{$sm} {
                         font-family: "Gotham";
                         font-style: normal;
@@ -89,17 +104,24 @@
                 align-items: center;
                 gap: 0.5rem;
                 .imageWrapper {
-                    @media #{$sm} {
+                    @media #{$sm,$md} {
                         height: 56px;
                     }
                 }
                 .clientName {
-                    @media #{$sm} {
+                    @media #{$sm,$md} {
                         margin-top: 2rem;
                     }
                     h1 {
                         font-weight: 700;
                         font-size: $textNormal;
+                        @media #{$md} {
+                            margin-bottom: 0%;
+                            font-family: "Gotham";
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: $textNormal;
+                        }
                         @media #{$sm} {
                             margin-bottom: 0%;
                             font-family: "Gotham";
@@ -112,6 +134,12 @@
                         font-style: italic;
                         font-weight: 500;
                         font-size: 12px;
+                        @media #{$md} {
+                            font-family: "Gotham";
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: $textNormal;
+                        }
                         @media #{$sm} {
                             font-family: "Gotham";
                             font-style: normal;
@@ -122,6 +150,12 @@
                 }
             }
             // it's only for testing purpose
+            @media #{$md} {
+                width: 72%;
+                height: 300px;
+                border-radius: 8px;
+                margin: 1rem;
+            }
             @media #{$sm} {
                 width: 100%;
                 height: 200px;

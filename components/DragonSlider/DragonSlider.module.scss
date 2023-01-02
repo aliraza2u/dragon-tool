@@ -91,6 +91,10 @@
         .activeSlide {
             background-color: $secondaryColor;
             margin-top: 0;
+            @media #{$md} {
+                margin-left: 4rem;
+                margin-right: 4rem;
+            }
             @media #{$sm} {
                 margin-left: 2rem;
                 margin-right: 2rem;
@@ -102,6 +106,10 @@
         .otherSlides {
             margin-left: 2rem;
             margin-right: 2rem;
+            @media #{$md} {
+                margin-left: 4rem;
+                margin-right: 4rem;
+            }
         }
     }
 }

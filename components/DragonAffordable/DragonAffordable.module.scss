@@ -5,6 +5,9 @@
     background-color: $primaryColor;
     padding-bottom: 4rem;
     padding-top: 3rem;
+    @media #{$md} {
+        margin-bottom: -1%;
+    }
     @media #{$sm} {
         margin-bottom: -54%;
     }
@@ -13,7 +16,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @media #{$sm} {
+        @media #{$sm ,$md} {
             flex-direction: column-reverse;
             gap: 0rem;
         }
@@ -26,7 +29,7 @@
             .heading {
                 color: $secondaryColor;
             }
-            @media #{$sm} {
+            @media #{$sm,$md} {
                 display: none;
             }
         }
@@ -37,6 +40,13 @@
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+            }
+            @media #{$md} {
+                margin-top: -10%;
+                width: 100%;
+                height: 100%;
+                margin-bottom: -4%;
+                padding-left: 66%;
             }
             @media #{$sm} {
                 padding-left: 66%;
@@ -49,6 +59,17 @@
         .affordableWrap {
             h1 {
                 display: none;
+                @media #{$md} {
+                    display: block;
+                    color: $white;
+                    width: 447px;
+                    height: 19px;
+                    font-family: "Gotham";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 46px;
+                    text-align: center;
+                }
                 @media #{$sm} {
                     display: block;
                     color: $white;
@@ -62,6 +83,13 @@
                     text-align: center;
                 }
                 .wrap {
+                    @media #{$md} {
+                        font-family: "Gotham";
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 46px;
+                        color: $secondaryColor;
+                    }
                     @media #{$sm} {
                         font-family: "Gotham";
                         font-style: normal;
@@ -85,7 +113,7 @@
             font-weight: 500;
             font-size: $textSize;
             text-align: center;
-            @media #{$sm} {
+            @media #{$sm ,$md} {
                 display: none;
             }
         }

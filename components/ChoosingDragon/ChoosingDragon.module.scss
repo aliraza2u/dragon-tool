@@ -1,7 +1,7 @@
 @import "../../styles/_variables";
 
 .choosingDragonSection {
-    @media #{$sm} {
+    @media #{$sm,$md} {
         background-color: $primaryColor;
     }
     .titleBox {
@@ -9,8 +9,19 @@
         color: $white;
         background-color: $primaryColor;
         padding: 4rem 0;
+        @media #{$md} {
+            padding-bottom: 138px;
+        }
         h1 {
             font-size: $headingSize;
+            @media #{$md} {
+                height: 19px;
+                font-family: "Gotham";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 46px;
+                text-align: center;
+            }
             @media #{$sm} {
                 height: 19px;
                 font-family: "Gotham";
@@ -24,6 +35,13 @@
             margin: 0;
             font-size: $textSize;
             color: $lightGray;
+            @media #{$md} {
+                font-size: 34px;
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 600;
+                padding-top: 31px;
+            }
             @media #{$sm} {
                 font-size: $smTextLg;
                 font-family: "Poppins";
@@ -46,7 +64,11 @@
             height: 330px;
         }
         @media #{$md} {
-            clip-path: circle(70% at 50% 70%);
+            height: 700px;
+            webkit-clip-path: circle(69.3% at 49% 64%);
+            clip-path: circle(69.3% at 49% 91%);
+
+            background-color: $secondaryColor;
         }
         @media #{$sm} {
             clip-path: circle(69.3% at 49% 64%);
@@ -117,6 +139,7 @@
                     transform: translate(-235px, 110px);
                 }
                 @media #{$md} {
+                    transform: translate(161px, 455%);
                 }
                 @media #{$sm} {
                     transform: translate(12px, 72px);
@@ -135,6 +158,8 @@
                     transform: translate(-275px, 0);
                 }
                 @media #{$md} {
+                    bottom: 284px;
+                    transform: translate(470px, 0);
                 }
                 @media #{$sm} {
                     transform: translate(51px, 131px);
@@ -151,6 +176,8 @@
                     right: -40%;
                 }
                 @media #{$md} {
+                    top: 40%;
+                    right: 38%;
                 }
                 @media #{$sm} {
                     top: 38%;
