@@ -53,6 +53,8 @@
         gap: 1.5rem;
         @media #{$sm ,$md} {
             margin-bottom: -1%;
+            flex-wrap: nowrap;
+    overflow-x: scroll;
         }
         .card {
             @media #{$sm,$md} {

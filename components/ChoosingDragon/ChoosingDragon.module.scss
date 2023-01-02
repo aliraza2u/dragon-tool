@@ -10,7 +10,6 @@
         background-color: $primaryColor;
         padding: 4rem 0;
         @media #{$md} {
-            padding-bottom: 138px;
         }
         h1 {
             font-size: $headingSize;
@@ -19,7 +18,7 @@
                 font-family: "Gotham";
                 font-style: normal;
                 font-weight: 700;
-                font-size: 46px;
+                font-size: $headingSizenormal;
                 text-align: center;
             }
             @media #{$sm} {
@@ -27,7 +26,7 @@
                 font-family: "Gotham";
                 font-style: normal;
                 font-weight: 700;
-                font-size: $smHeadingSize;
+                font-size: $smHeadingSizeLg;
                 text-align: center;
             }
         }
@@ -36,7 +35,7 @@
             font-size: $textSize;
             color: $lightGray;
             @media #{$md} {
-                font-size: 34px;
+                font-size: $textSize;
                 font-family: "Poppins";
                 font-style: normal;
                 font-weight: 600;
@@ -117,6 +116,7 @@
                 }
                 @media #{$md} {
                     width: 350px;
+                    bottom: -20px;
                 }
                 @media #{$sm} {
                     width: 290px;

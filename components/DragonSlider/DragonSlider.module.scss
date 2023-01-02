@@ -9,10 +9,19 @@
         h1 {
             color: $secondaryColor;
             font-size: $headingSize;
+            @media #{$md} {
+                font-size: $headingSizenormal;
+            }
+            @media #{$sm} {
+                font-size: $smHeadingSizeLg;
+            }
         }
         p {
             font-size: $textSize;
             color: $lightGray;
+            @media #{$sm} {
+                font-size: $smTextLg;
+            }
         }
     }
     .slider {
@@ -55,6 +64,12 @@
                 font-size: 48px;
                 @media #{$lg,$xl} {
                     font-size: $textSizeLg;
+                }
+                @media #{$md} {
+                    font-size: $textSize;
+                }
+                @media #{$sm} {
+                    font-size: $smHeadingSizeLg;
                 }
             }
             .listWrapper {
