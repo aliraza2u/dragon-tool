@@ -16,6 +16,7 @@ const index = () => {
                 </div>
                 <h1>Happy Clients</h1>
             </div>
+            <div className={styles.cardOutline}>
             <div className={styles.cardWrap}>
                 {card.map((x, i) => (
                     <div key={i} className={styles.card}>
@@ -39,6 +40,7 @@ const index = () => {
                         </div>
                     </div>
                 ))}
+            </div>
             </div>
         </div>
     );

@@ -46,123 +46,139 @@
             }
         }
     }
-    .cardWrap {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.5rem;
-        @media #{$sm ,$md} {
-            margin-bottom: -1%;
-            flex-wrap: nowrap;
-    overflow-x: scroll;
+    .cardOutline {
+        @media #{$sm, $md} {
+            overflow-x: scroll;
+            margin: 0 2rem;
         }
-        .card {
-            @media #{$sm,$md} {
-                padding: 1.3rem;
-            }
+        .cardWrap {
             display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: flex-start;
-            background-repeat: no-repeat;
-            background-color: $white;
-            border-radius: 15px;
-            width: 31%;
-            height: 260px;
-            padding: 1rem;
-            &:nth-child(even) {
-                background-repeat: no-repeat;
-                background-color: $secondaryColor;
-                color: $white;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            @media #{$sm ,$md} {
+                flex-wrap: nowrap;
+                justify-content: flex-start;
             }
-            .commentWrapper {
-                .comment {
-                    font-weight: 700;
-                    font-size: $textSizeSm;
-                    position: relative;
-                    z-index: 10;
-                    top: -18px;
-                    left: 60px;
-                    width: calc(100% - 15%);
-                    @media #{$md} {
-                        font-family: "Gotham";
-                        font-style: normal;
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                background-repeat: no-repeat;
+                background-color: $white;
+                border-radius: 12px;
+                width: 30%;
+                height: 260px;
+                padding: 1rem;
+                &:nth-child(even) {
+                    background-repeat: no-repeat;
+                    background-color: $secondaryColor;
+                    color: $white;
+                }
+                @media #{$md} {
+                    height: 300px;
+                    border-radius: 8px;
+                    flex: 0 0 60%;
+                    width: auto;
+                }
+                @media #{$sm} {
+                    height: 200px;
+                    border-radius: 8px;
+                    flex: 0 0 100%;
+                    width: auto;
+                }
+                .commentWrapper {
+                    .comment {
                         font-weight: 700;
                         font-size: $textSizeSm;
-                        width: 62%;
-                    }
-                    @media #{$sm} {
-                        font-family: "Gotham";
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: $smTextSize;
-                        width: 62%;
-                    }
-                }
-            }
-            .clientDetails {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                gap: 0.5rem;
-                .imageWrapper {
-                    @media #{$sm,$md} {
-                        height: 56px;
-                    }
-                }
-                .clientName {
-                    @media #{$sm,$md} {
-                        margin-top: 2rem;
-                    }
-                    h1 {
-                        font-weight: 700;
-                        font-size: $textNormal;
-                        @media #{$md} {
-                            margin-bottom: 0%;
-                            font-family: "Gotham";
-                            font-style: normal;
-                            font-weight: 700;
-                            font-size: $textNormal;
-                        }
-                        @media #{$sm} {
-                            margin-bottom: 0%;
-                            font-family: "Gotham";
-                            font-style: normal;
-                            font-weight: 700;
-                            font-size: $smTextSize;
-                        }
-                    }
-                    p {
-                        font-style: italic;
-                        font-weight: 500;
-                        font-size: 12px;
+                        position: relative;
+                        z-index: 10;
+                        top: -18px;
+                        left: 60px;
+                        width: calc(100% - 15%);
                         @media #{$md} {
                             font-family: "Gotham";
                             font-style: normal;
-                            font-weight: 500;
-                            font-size: $textNormal;
+                            font-weight: 700;
+                            font-size: $textSizeSm;
+                            width: 100%;
+                            left: 12px;
                         }
                         @media #{$sm} {
                             font-family: "Gotham";
                             font-style: normal;
-                            font-weight: 500;
+                            font-weight: 700;
                             font-size: $smTextSize;
+                            width: 100%;
+                            left: 12px;
                         }
                     }
                 }
-            }
-            // it's only for testing purpose
-            @media #{$md} {
-                width: 72%;
-                height: 300px;
-                border-radius: 8px;
-                margin: 1rem;
-            }
-            @media #{$sm} {
-                width: 100%;
-                height: 200px;
-                border-radius: 8px;
-                margin: 1rem;
+                .clientDetails {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 0.5rem;
+                    .imageWrapper {
+                        @media #{$sm,$md} {
+                            height: 56px;
+                        }
+                    }
+                    .clientName {
+                        @media #{$sm,$md} {
+                            margin-top: 2rem;
+                        }
+                        h1 {
+                            font-weight: 700;
+                            font-size: $textNormal;
+                            @media #{$md} {
+                                margin-bottom: 0;
+                                font-family: "Gotham";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: $textNormal;
+                            }
+                            @media #{$sm} {
+                                margin-bottom: 0;
+                                font-family: "Gotham";
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: $smTextSize;
+                            }
+                        }
+                        p {
+                            font-style: italic;
+                            font-weight: 500;
+                            font-size: 12px;
+                            @media #{$md} {
+                                font-family: "Gotham";
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: $textNormal;
+                            }
+                            @media #{$sm} {
+                                font-family: "Gotham";
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: $smTextSize;
+                            }
+                        }
+                    }
+                }
+                // // it's only for testing purpose
+                // @media #{$md} {
+                //     width: 72%;
+                //     height: 300px;
+                //     border-radius: 8px;
+                //     margin: 1rem;
+                // }
+                // @media #{$sm} {
+                //     width: 100%;
+                //     height: 200px;
+                //     border-radius: 8px;
+                //     margin: 1rem;
+                // }
             }
         }
     }
