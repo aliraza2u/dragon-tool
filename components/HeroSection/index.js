@@ -6,7 +6,9 @@ import Col from "react-bootstrap/Col";
 import CustomButton from "../CustomButton";
 import Image from "next/image";
 import logo from "../../public/logo.png";
-const HeroSection = () => {
+import Link from "next/link";
+const HeroSection = ({userData}) => {
+
   return (
     <div className={styles.herosection}>
       <Container>
@@ -28,10 +30,12 @@ const HeroSection = () => {
                 </p>
               </div>
               <div className={styles.signUp}>
+              {!userData&&<Link href='/signup'>
                 <CustomButton
                   children={"Signup Today"}
                   className={styles.signupDragon}
                 />
+                </Link>}
               </div>
             </div>
           </Col>
@@ -39,7 +43,7 @@ const HeroSection = () => {
             <div className={styles.dragonWrap}>
               <div className={styles.imageBackground}>
                 <div className={styles.imageWrapper}>
-                  <Image src={logo} className={styles.img} />
+                  <Image src={logo} className={styles.img} alt="logo-here" />
                 </div>
               </div>
             </div>

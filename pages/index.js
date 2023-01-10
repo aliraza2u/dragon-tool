@@ -10,8 +10,39 @@ import FaqDragon from "../components/FaqDragon";
 import ImportantDragon from "../components/ImportantDragon";
 import ChoosingDragon from "../components/ChoosingDragon";
 import DragonSlider from "../components/DragonSlider";
+import { useRouter } from "next/router";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../config/firebase";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+
+  const router = useRouter();
+  const [userData,setUserData]=useState();
+
+  const logoutHandler = async () => {
+    await auth.signOut();
+    router.push("/login");
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      auth.signOut().then((res) => {
+      });
+    }, 300000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        setUserData("")
+      }
+      else{
+        setUserData(user)
+      }
+    });
+  }, []);
   return (
     <div className={styles.container}>
       <Head>
@@ -21,16 +52,16 @@ export default function Home() {
       </Head>
 
       <main>
-        <Navbar />
-        <HeroSection />
+        <Navbar userData={userData} />
+        <HeroSection  userData={userData} />
         <Divider />
-        <DragonAffordable />
-        <ChoosingDragon />
-        <DragonSlider />
-        <ClientDragon />
-        <FaqDragon />
-        <ImportantDragon />
-        <Footer />
+        <DragonAffordable userData={userData} />
+        <ChoosingDragon userData={userData} />
+        <DragonSlider userData={userData} />
+        <ClientDragon userData={userData} />
+        <FaqDragon userData={userData}  />
+        <ImportantDragon userData={userData} />
+        <Footer userData={userData}  />
       </main>
     </div>
   );

@@ -12,7 +12,7 @@ const index = () => {
         <div className={styles.clientWrapper}>
             <div className={styles.title}>
                 <div className={styles.imageWrapper}>
-                    <Image src={client} className={styles.image} />
+                    <Image src={client} className={styles.image} alt="client" />
                 </div>
                 <h1>Happy Clients</h1>
             </div>
@@ -30,7 +30,7 @@ const index = () => {
                         </div>
                         <div className={styles.clientDetails}>
                             <div className={styles.imageWrapper}>
-                                <Image src={userIcon} className={styles.image} />
+                                <Image src={userIcon} className={styles.image} alt="user" />
                             </div>
                             <div className={styles.clientName}>
                                 <h1>{x.name}</h1>

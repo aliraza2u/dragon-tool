@@ -16,7 +16,7 @@ const DragonAffordable = () => {
           Why So <span className={styles.heading}>Affordable</span> ?
         </h1>
         <div className={styles.dollerWrapper}>
-          <Image src={doller} className={styles.wrapper} />
+          <Image src={doller} className={styles.wrapper} alt="dollar" />
         </div>
       </div>
       <div className={styles.dragonAffordaleDiscription}>

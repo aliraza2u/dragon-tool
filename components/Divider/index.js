@@ -6,7 +6,7 @@ const Divider = () => {
   return (
     <div className={styles.Divider}>
       <div className={styles.imageWrapper}>
-        <Image src={slider} className={styles.wrapper} />
+        <Image src={slider} className={styles.wrapper} alt="slider"/>
       </div>
     </div>
   );
