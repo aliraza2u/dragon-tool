@@ -56,7 +56,7 @@ export default function Home() {
     onAuthStateChanged(auth, (user) => {
       if (!user) {
         setCookies("");
-         router.push("/login");
+         router.push("/login");  
       } else {
         fetchCookies(user.uid);
       }
