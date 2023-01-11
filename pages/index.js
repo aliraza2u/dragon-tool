@@ -25,16 +25,16 @@ export default function Home() {
     router.push("/login");
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      auth.signOut().then((res) => {
-      });
-    }, 300000);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     auth.signOut().then((res) => {
+  //     });
+  //   }, 300000);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+   const unsub= onAuthStateChanged(auth, (user) => {
       if (!user) {
         setUserData("")
       }
@@ -42,6 +42,7 @@ export default function Home() {
         setUserData(user)
       }
     });
+    return ()=>unsub()
   }, []);
   return (
     <div className={styles.container}>

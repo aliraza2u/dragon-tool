@@ -19,9 +19,10 @@ const Login = () => {
   const router = useRouter();
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+  const unsub=  onAuthStateChanged(auth, (user) => {
       if (user) router.push("/");
     });
+    return ()=>unsub()
   }, []);
 
   const loginHandler = async () => {

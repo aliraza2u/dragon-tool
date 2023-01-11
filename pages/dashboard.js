@@ -14,21 +14,20 @@ const Dashboard = () => {
     {name:"piktochart",img:"/piktochart.jpg"}
   ]
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      auth.signOut().then((res) => {
-        router.push("/login");
-      });
-    }, 300000);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     auth.signOut().then((res) => {
+  //       router.push("/login");
+  //     });
+  //   }, 300000);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (!user) {
-     router.push("/login");
-      }
+   const unsub= onAuthStateChanged(auth, (user) => {
+      if (!user) {router.push("/login");}
     });
+    return ()=>unsub()
   }, []);
   return (
     <div className={styles.pageWrapper}>

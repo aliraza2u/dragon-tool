@@ -11,16 +11,36 @@ import styles from "../../styles/clickMe.module.css";
 
 export default function Home() {
   const [cookies, setCookies] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
 
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     auth.signOut().then((res) => {
+  //       router.push("/login");
+  //     });
+  //   }, 300000);
+  //   return () => clearTimeout(timer);
+  // }, []);
   useEffect(() => {
-    const timer = setTimeout(() => {
-      auth.signOut().then((res) => {
-        router.push("/login");
-      });
-    }, 300000);
-    return () => clearTimeout(timer);
+    let inter;
+
+      inter=setInterval(()=>{
+        console.log(
+          "page is mounted"
+        )
+      },[2000])
+
+   const unsub= onAuthStateChanged(auth, (user) => {
+      if (!user) {
+      setCookies("");
+     router.push("/login");
+      }
+      else {
+        fetchCookies(user.uid);
+      }
+    });
+    return ()=>{clearInterval(inter); unsub()}
   }, []);
 
   const fetchCookies = async (uid) => {
@@ -51,17 +71,6 @@ export default function Home() {
       }
     }
   };
-
-  useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
-      if (!user) {
-        setCookies("");
-         router.push("/login");  
-      } else {
-        fetchCookies(user.uid);
-      }
-    });
-  }, []);
 
   if (loading) return <div>loading...</div>;
   return (

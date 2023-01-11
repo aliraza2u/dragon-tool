@@ -63,9 +63,10 @@ const Signup = () => {
   };
 
   useEffect(() => {
-    onAuthStateChanged(auth, (user) => {
+   const unsub= onAuthStateChanged(auth, (user) => {
       if (user) router.push("/");
     });
+    return ()=>unsub()
   }, []);
 
   return (

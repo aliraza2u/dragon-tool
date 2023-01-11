@@ -6,8 +6,6 @@ import CustomButton from "../CustomButton/index";
 import dragonWhiteLogo from "../../public/dragonWhiteLogo.png";
 import login from "../../public/login.png";
 import { BiMenu } from "react-icons/bi";
-import { useRouter } from "next/router";
-import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../config/firebase";
 import Link from "next/link";
 
@@ -17,13 +15,6 @@ const Navbar = ({userData}) => {
   const logoutHandler = async () => {
     await auth.signOut();
   };
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     auth.signOut().then((res) => {});
-  //   }, 300000);
-  //   return () => clearTimeout(timer);
-  // }, []);
 
 
   return (
