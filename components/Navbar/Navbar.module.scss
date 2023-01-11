@@ -9,8 +9,26 @@
         background-color: $primaryColor;
         width: 100%;
         @media #{$sm} {
-            padding: 0 0.5rem;
+        padding: 0 0.5rem;
+        // width: 192px;
+        height: 58px;
+        text-align: center;
+        background: $cgBlue;
+        // border-radius: 70px;
+        .area {
+          border: none;
+          width: 139px;
+          height: 32px;
+          left: 1495px;
+          top: 79px;
+          background: $cgBlue;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          text-align: center;
         }
+    }
         .imageWrap {
             width: 288px;
             height: 138px;

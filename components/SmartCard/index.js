@@ -18,7 +18,7 @@ const SmartCard = ({ tilte, slug, tooltipContent }) => {
             <div className={styles.contentWrapper}>
                 <div className={styles.imageBox}>
                     <div className={styles.imageWrapper}>
-                        <Image src={icons[slug]} alt={tooltipContent} />
+                        <Image src={icons[slug]} alt={tooltipContent}  />
                     </div>
                 </div>
                 <div className={styles.content}>

@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div className={styles.footerWrapper}>
       <div className={styles.imageWrapper}>
-        <Image src={dragonWhiteLogo} className={styles.wrapper} />
+        <Image src={dragonWhiteLogo} className={styles.wrapper} alt="dragon-logo"/>
       </div>
       <div className={styles.dragonFooter}>
         <p>Home</p>
@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
       <div className={styles.footerImageWrapper}>
         <div className={styles.dragonPanda}>
-          <Image src={dragonPanda} className={styles.panda} />
+          <Image src={dragonPanda} className={styles.panda} alt="panda-logo" />
         </div>
       </div>
       <div className={styles.copyRight}>
