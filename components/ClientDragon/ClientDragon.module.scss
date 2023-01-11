@@ -83,7 +83,7 @@
                     width: auto;
                 }
                 @media #{$sm} {
-                    height: 200px;
+                    height: 180px;
                     border-radius: 8px;
                     flex: 0 0 100%;
                     width: auto;
@@ -109,9 +109,16 @@
                             font-family: "Gotham";
                             font-style: normal;
                             font-weight: 700;
-                            font-size: $smTextSize;
+                            font-size: 12px;
+                            top: -15px;
+                            left: 5px;
                             width: 100%;
-                            left: 12px;
+                        }
+                    }
+                    img {
+                        @media #{$sm} {
+                            width: 56px;
+                            height: 36px;
                         }
                     }
                 }
@@ -121,13 +128,22 @@
                     align-items: center;
                     gap: 0.5rem;
                     .imageWrapper {
-                        @media #{$sm,$md} {
+                        @media #{$md} {
                             height: 56px;
+                        }
+                        .image {
+                            @media #{$sm} {
+                                height: 36px;
+                                width: 36px;
+                            }
                         }
                     }
                     .clientName {
-                        @media #{$sm,$md} {
+                        @media #{$md} {
                             margin-top: 2rem;
+                        }
+                        @media #{$sm} {
+                            margin-top: 1.3rem;
                         }
                         h1 {
                             font-weight: 700;
@@ -166,19 +182,6 @@
                         }
                     }
                 }
-                // // it's only for testing purpose
-                // @media #{$md} {
-                //     width: 72%;
-                //     height: 300px;
-                //     border-radius: 8px;
-                //     margin: 1rem;
-                // }
-                // @media #{$sm} {
-                //     width: 100%;
-                //     height: 200px;
-                //     border-radius: 8px;
-                //     margin: 1rem;
-                // }
             }
         }
     }
