@@ -73,12 +73,12 @@
     position: relative;
     right: 0%;
 
-    @media #{$sm} {
+    @media #{$sm,$md} {
         display: none;
     }
     .dragonPanda {
         position: absolute;
-        height: 451px;
+        height: 438px;
         right: 0%;
         bottom: 90%;
         .panda {

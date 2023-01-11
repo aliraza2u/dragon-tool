@@ -41,11 +41,17 @@ p {
     &::before {
         color: $secondaryColor !important;
     }
+    @media #{$md} {
+        right: 24px !important;
+    }
 }
 .slick-prev {
     left: 6px !important;
     z-index: 10;
     &::before {
         color: $secondaryColor !important;
+    }
+    @media #{$md} {
+        left: 24px !important;
     }
 }

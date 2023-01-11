@@ -9,16 +9,14 @@
         padding-top: 4rem;
     }
     .herosectionWrap {
-        @media #{$sm} {
+        @media #{$sm,$md} {
             flex-direction: column-reverse;
         }
         .heading {
             width: 100%;
-            @media #{$sm} {
-            }
 
             .dragon {
-                @media #{$sm} {
+                @media #{$sm ,$md} {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -37,6 +35,16 @@
                     .best {
                         color: $secondaryColor;
                     }
+                    @media #{$md} {
+                        width: 447px;
+                        height: 19px;
+                        font-family: "Gotham";
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 46px;
+                        text-align: center;
+                    }
+
                     @media #{$sm} {
                         width: 297px;
                         height: 19px;
@@ -59,11 +67,18 @@
                     font-weight: 400;
                     font-size: $textSizeSm;
                 }
-                @media #{$sm} {
+                @media #{$sm,$md} {
                     display: none;
                 }
             }
             .signUp {
+                @media #{$md} {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 24%;
+                    margin-bottom: -32%;
+                }
                 @media #{$sm} {
                     display: flex;
                     justify-content: center;
@@ -83,6 +98,7 @@
                     align-items: center;
                     background-color: $cgBlue;
                     color: $vector;
+
                     @media #{$sm} {
                         font-family: "Gotham";
                         font-style: normal;

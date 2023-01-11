@@ -3,13 +3,22 @@
 .faqWrapper {
     background-color: $primaryColor;
     padding: $verticalPaddingLg;
+    margin-bottom: -1%;
     .title {
         text-align: center;
         padding-bottom: 3rem;
         color: $white;
         font-weight: 700;
         font-size: $headingSize;
+        @media #{$md} {
+            text-align: center;
+            font-family: "Gotham";
+            font-style: normal;
+            font-weight: 700;
+            font-size: $headingSizenormal;
+        }
         @media #{$sm} {
+            text-align: center;
             font-family: "Gotham";
             font-style: normal;
             font-weight: 700;
@@ -22,18 +31,26 @@
         grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
         place-items: center;
         padding: $horizontalPaddingLg;
-        @media #{$sm} {
+        @media #{$sm ,$md} {
             display: block;
         }
         .faqCol {
             width: 80%;
             margin-bottom: 60px;
-            @media #{$sm} {
+            @media #{$sm,$md} {
                 width: 100%;
             }
             h1 {
                 font-size: $textSizeLg;
                 margin-bottom: 28px;
+                text-align: center;
+                @media #{$md} {
+                    font-family: "Gotham";
+                    font-style: normal;
+                    font-weight: 700;
+                    text-align: center;
+                    font-size: $smHeadingSizeLg;
+                }
                 @media #{$sm} {
                     font-family: "Gotham";
                     font-style: normal;
@@ -43,12 +60,21 @@
                 }
             }
             p {
+                text-align: center;
                 font-size: $textSizeSm;
+                @media #{$md} {
+                    font-family: "Poppins";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: $textSizeSm;
+                    text-align: center;
+                }
                 @media #{$sm} {
                     font-family: "Poppins";
                     font-style: normal;
                     font-weight: 400;
                     font-size: $smTextSize;
+                    text-align: center;
                 }
             }
         }
