@@ -13,7 +13,7 @@ const HeroSection = ({userData}) => {
     <div className={styles.herosection}>
       <Container>
         <Row className={styles.herosectionWrap}>
-          <Col xs={12} md={6}>
+          <Col xs={12} lg={6}>
             <div className={styles.heading}>
               <div className={styles.dragon}>
                 <h1>
